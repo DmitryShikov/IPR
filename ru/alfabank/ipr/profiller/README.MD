@@ -120,6 +120,17 @@
 
 Для более детального анализа работы JVM был использован инструмент **async-profiler**.
 
+запускался с помощью
+
+```text
+/opt/homebrew/Cellar/async-profiler/4.4/bin/asprof \
+-e alloc \
+--alloc 10k \
+-d 180 \
+-f /Users/admin/Desktop/alloc_detail.html \
+49232
+```
+
 ## Flame Graph
 
 ![Flame Graph](img_1.png)
